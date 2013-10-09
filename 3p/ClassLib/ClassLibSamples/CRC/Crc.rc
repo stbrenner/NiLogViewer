@@ -1,0 +1,121 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "crc.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CRC DIALOGEX 0, 0, 260, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "CRC sample..."
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    LTEXT           "File:",IDC_STATIC,8,6,14,8
+    EDITTEXT        IDC_FILE,24,4,232,13,ES_AUTOHSCROLL,WS_EX_ACCEPTFILES
+    LTEXT           "CRC:",IDC_STATIC,4,21,18,8
+    LTEXT           "",IDC_SETCRC,25,21,231,8
+    PUSHBUTTON      "Compute CRC",IDC_CRC,136,31,57,14
+    PUSHBUTTON      "OK",IDOK,198,31,58,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CRC, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 256
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 45
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,4 @@
+LIBRARY BCC
+EXPORTS
+;	DllGetVersion ; Use GetProcAddress() for this.
+	CPlApplet

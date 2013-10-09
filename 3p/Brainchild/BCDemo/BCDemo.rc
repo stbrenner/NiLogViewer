@@ -1,0 +1,229 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  "toolbar.bmp"
+IDB_PIN                 BITMAP                  "pin.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "bcdemo.ico"
+IDI_CLOCK               ICON                    "clock.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FRAMEMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New...\tCtrl+N",             IDM_NEW
+        MENUITEM "&Open...\tCtrl+O",            IDM_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Files",                IDM_RECENTFILES
+        MENUITEM "Hot Files",                   IDM_HOTFILES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Paste to New File...",        IDM_PASTENEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window...",              IDM_NEWWINDOW
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Configuration...",           IDM_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "&New Document on Startup",    IDM_NEWONSTART
+        MENUITEM "&XP Style Menus",             IDM_XPSYLEMENUS, CHECKED
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   IDM_ABOUT
+    END
+END
+
+IDR_CHILDMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New...\tCtrl+N",             IDM_NEW
+        MENUITEM "&Open...\tCtrl+O",            IDM_OPEN
+        MENUITEM "&Close",                      IDM_CLOSE
+        MENUITEM "Close All",                   IDM_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               IDM_SAVE
+        MENUITEM "Save &As...",                 IDM_SAVEAS
+        MENUITEM "Save A&ll",                   IDM_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Readonl&y",                   IDM_READONLY
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...\tAlt+Enter",    IDM_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Page Setup...",               40050
+        MENUITEM "&Print...\tCtrl+P",           IDM_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Files",                IDM_RECENTFILES
+        MENUITEM "Hot Files",                   IDM_HOTFILES
+        MENUITEM "Add to Hot Files",            IDM_ADDTOHOT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Redo\tCtrl+Y",               IDM_REDO
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                IDM_CUT
+        MENUITEM "&Copy\tCtrl+C",               IDM_COPY
+        MENUITEM "&Paste\tCtrl+V",              IDM_PASTE
+        MENUITEM "&Delete\tDel",                IDM_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select A&ll\tCtrl+A",         IDM_SELECTALL
+        MENUITEM SEPARATOR
+        POPUP "Change Casing"
+        BEGIN
+            MENUITEM "&Invert Case",                IDM_INVERTCASE
+            MENUITEM "&Upper Case",                 IDM_UPPERCASE
+            MENUITEM "&Lower Case",                 IDM_LOWERCASE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            IDM_FIND
+        MENUITEM "Find Previo&us\tShift+F3",    IDM_FINDPREV
+        MENUITEM "Find &Next\tF3",              IDM_FINDNEXT
+        MENUITEM "R&eplace...\tCtrl+H",         IDM_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "&Go To...\tCtrl+G",           IDM_GOTO
+        POPUP "Bookmarks"
+        BEGIN
+            MENUITEM "&Toggle\tCtrl+F2",            IDM_TOGGLEBM
+            MENUITEM "&Clear All\tShift+Ctrl+F2",   IDM_CLEARBM
+            MENUITEM "Goto &First",                 IDM_FIRSTBM
+            MENUITEM "Goto &Next\tF2",              IDM_NEXTBM
+            MENUITEM "Goto &Previous\tShift+F2",    IDM_PREVBM
+            MENUITEM "Goto &Last",                  IDM_LASTBM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Match Bracket\tCtrl+]",      IDM_MATCH
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window...",              IDM_NEWWINDOW
+        MENUITEM "&Cascade",                    IDM_CASCADE
+        MENUITEM "Tile &Horizontally",          IDM_TILEHORZ
+        MENUITEM "Tile &Vertically",            IDM_TILEVERT
+        MENUITEM "&Arrange Icons",              IDM_ARRANGE
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Configuration...",           IDM_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "&New Document on Startup",    IDM_NEWONSTART
+        MENUITEM "&XP Style Menus",             IDM_XPSTYLEMENUS, CHECKED
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   IDM_ABOUT
+        MENUITEM "About Brainchild...",         IDM_ABOUTBRAINCHILD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL ACCELERATORS 
+BEGIN
+    "N",            IDM_NEWWINDOW,          VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

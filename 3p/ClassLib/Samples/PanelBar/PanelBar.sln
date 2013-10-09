@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PanelBar", "PanelBar.vcproj", "{37D1A7F8-AB5F-480B-B28F-59127D240C07}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{37D1A7F8-AB5F-480B-B28F-59127D240C07}.Debug.ActiveCfg = Debug|Win32
+		{37D1A7F8-AB5F-480B-B28F-59127D240C07}.Debug.Build.0 = Debug|Win32
+		{37D1A7F8-AB5F-480B-B28F-59127D240C07}.Release.ActiveCfg = Release|Win32
+		{37D1A7F8-AB5F-480B-B28F-59127D240C07}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

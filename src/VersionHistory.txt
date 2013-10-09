@@ -1,0 +1,29 @@
+NI Log Viewer Version History
+-----------------------------
+
+Version 1.1.6.0 (08/15/2011)
+- Fixed: Connecting from 32 bit machines to 64 bit machines
+
+Version 1.1.5.0 (08/13/2011)
+- Fixed: Correctly resolving log folder on 64 bit computers
+
+Version 1.1.4.110 (05/22/2007)
+- Implemented: Vista Support.
+
+Version 1.1.4.109 (09/20/2006)
+- Fixed: Enabling/disabling menu items.
+- Fixed: Increased speed when srolling with mouse wheel.
+- Implemented: Possibility to automatically scroll to end on file load/reload.
+- Implemented: Sending Log Files as eMails.
+
+Version 1.1.4.108 (07/17/2006)
+- Fixed: Proper displaying of enteo's log4net log files.
+- Fixed: Now hyperlinks to source code files that are part of an exception's stack trace can be opened.
+
+Version 1.1.4.107 (05/14/2006)
+- Fixed: GPF when reloading file.
+
+Version 1.1.4.106 (04/17/2006)
+- Remember search folder, search text and computers in registry
+- Better connecting to remote log folders
+- Deletion of old log files

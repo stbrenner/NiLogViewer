@@ -1,0 +1,46 @@
+LIBRARY BRAINCHILD
+
+EXPORTS
+;	DllGetVersion			; Use the GetProcAddress API to get to this.
+	CustomControlInfoA
+	CreateCList
+	DeleteCList
+	NextCEntry
+	KillCList
+	LoadParserFiles
+	FreeParserList
+	FreeParserNode
+	CheckUser
+	FindCommandID
+	FindCommandDesc
+	FindCommand
+	GetCommandTable
+	SetupHash
+	AddHash
+	RemHash
+	AddKeyword
+	DefaultParser
+	CodeQual2Str
+	Str2CodeQual
+	IsSpecialKey
+	ArrayGetSize
+	ArrayGetAt
+	ArrayAdd
+	ArrayInsertAt
+	ArrayRemoveAt
+	ArrayRemoveAll
+	ArrayCreate
+	ArrayDelete
+	ArrayAllocMem
+	ArrayFreeMem
+	ArraySort
+	CopyStringPool
+	GetUpdateMessage
+	OpenSettingsDialog
+	GetMemoryPool
+	FreeMemoryPool
+	AllocPooled
+	FreePooled
+	LoadParserFromFile
+	LoadParserFromMemory
+	IsNonModalDialogMessage

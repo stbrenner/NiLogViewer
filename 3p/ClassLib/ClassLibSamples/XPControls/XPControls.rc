@@ -1,0 +1,112 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XPC DIALOGEX 0, 0, 266, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Hot-tracking controls..."
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        """Normal"" style:",IDC_STATIC,4,17,127,61
+    GROUPBOX        """Office XP"" style:",IDC_STATIC,135,17,127,61
+    EDITTEXT        IDC_EDIT_1,10,28,116,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_1,10,44,116,82,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_2,10,60,116,74,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "OK",IDC_OK_2,69,83,61,16
+    EDITTEXT        IDC_EDIT_2,141,28,116,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_3,141,44,116,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_4,141,60,116,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDC_OK_1,201,83,61,16
+    CONTROL         "Disable controls",IDC_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,4,66,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_XPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 262
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

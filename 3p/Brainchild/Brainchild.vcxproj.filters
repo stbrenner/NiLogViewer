@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ef331d7c-b038-4fe0-8487-692218a6a242}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{68c09f4a-1546-4e52-8dc5-038f02820678}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1b49f2ec-6258-4906-bdb7-88d39df08805}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Doc">
+      <UniqueIdentifier>{cf523868-0942-463c-ba59-596855d5209a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bookmarks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="caret.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commands.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cursor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="custcntl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="date.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dispatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="goto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperlink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="indent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="marks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="match.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="messagebox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nofrag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ole.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parserlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scrollers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="brainchild.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="drag_sel.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="brainchild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nofrag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Brainchild.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="def.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="pattern.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="HTMLHelp\Programmer\RevCtrl.txt">
+      <Filter>Doc</Filter>
+    </Text>
+    <Text Include="ToDo.txt">
+      <Filter>Doc</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

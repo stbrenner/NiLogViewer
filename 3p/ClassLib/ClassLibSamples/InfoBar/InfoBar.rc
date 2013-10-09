@@ -1,0 +1,137 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "infobar.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_RIGHT               ICON                    "icon.ico"
+IDI_LEFT                ICON                    "left.ico"
+IDI_TOP                 ICON                    "icon1.ico"
+IDI_BOTTOM              ICON                    "ico00001.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFOBAR DIALOGEX 0, 0, 189, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "InfoBar sample"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,69,176,50,14
+    LTEXT           "Horizontal, left icon, gradient",IDC_HORIZRIGHT,4,160,
+                    181,12
+    LTEXT           "Vertical, top icon, non-gradient",IDC_VERTTOP,4,18,12,
+                    141
+    LTEXT           "Vertical, bottom icon, gradient",IDC_VERTBOTTOM,173,18,
+                    12,141
+    LTEXT           "Horizontal, right icon, non-gradient",IDC_HORIZLEFT,4,4,
+                    181,12
+    CTEXT           "",IDC_DESC,18,18,153,141,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFOBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 185
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

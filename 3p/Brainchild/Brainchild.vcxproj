@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E613F27-4E62-49CF-8B9B-C70D85B3F2FC}</ProjectGuid>
+    <RootNamespace>Brainchild</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/Brainchild.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;BRAINCHILD_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release/Brainchild.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0413</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>shlwapi.lib;comctl32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/Brainchild.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\brainchild.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\Release/Brainchild.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Release/Brainchild.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Brainchild.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;BRAINCHILD_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/Brainchild.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0413</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>shlwapi.lib;comctl32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/Brainchild.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\brainchild.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Brainchild.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Debug/Brainchild.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="array.c" />
+    <ClCompile Include="bookmarks.c" />
+    <ClCompile Include="caret.c" />
+    <ClCompile Include="clip.c" />
+    <ClCompile Include="clist.c" />
+    <ClCompile Include="commands.c" />
+    <ClCompile Include="create.c" />
+    <ClCompile Include="cursor.c" />
+    <ClCompile Include="custcntl.c" />
+    <ClCompile Include="date.c" />
+    <ClCompile Include="dispatch.c" />
+    <ClCompile Include="dll.c" />
+    <ClCompile Include="edit.c" />
+    <ClCompile Include="goto.c" />
+    <ClCompile Include="hyperlink.c" />
+    <ClCompile Include="indent.c" />
+    <ClCompile Include="io.c" />
+    <ClCompile Include="keyboard.c" />
+    <ClCompile Include="marks.c" />
+    <ClCompile Include="match.c" />
+    <ClCompile Include="messagebox.c" />
+    <ClCompile Include="misc.c" />
+    <ClCompile Include="mouse.c" />
+    <ClCompile Include="nofrag.c" />
+    <ClCompile Include="ole.c" />
+    <ClCompile Include="parser.c" />
+    <ClCompile Include="parserlist.c" />
+    <ClCompile Include="printer.c" />
+    <ClCompile Include="prop.c" />
+    <ClCompile Include="registry.c" />
+    <ClCompile Include="render.c" />
+    <ClCompile Include="scrollers.c" />
+    <ClCompile Include="search.c" />
+    <ClCompile Include="text.c" />
+    <ClCompile Include="thread.c" />
+    <ClCompile Include="tooltip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="brainchild.def" />
+    <None Include="cur00001.cur" />
+    <None Include="cursor1.cur" />
+    <None Include="drag_sel.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="brainchild.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="nofrag.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Brainchild.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="def.ico" />
+    <Image Include="icon1.ico" />
+    <Image Include="pattern.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="HTMLHelp\Programmer\RevCtrl.txt" />
+    <Text Include="ToDo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

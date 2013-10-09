@@ -1,0 +1,417 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <winres.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  "toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "logviewer.ico"
+IDI_LOGFILE_ICON        ICON                    "logfile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL ACCELERATORS 
+BEGIN
+    "O",            IDM_CHANGE_LOGFOLDER,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F4,          IDM_CLOSE,              VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDM_DELETE_ALL_FILES,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      IDM_DELETE_ALL_FILES,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "F",            IDM_FINDINFILES,        VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F6,          IDM_NEXTWND,            VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         IDM_NEXTWND,            VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      IDM_PASTE,              VIRTKEY, SHIFT, NOINVERT
+    VK_TAB,         IDM_PREVWND,            VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F5,          IDM_RELOAD_FILE,        VIRTKEY, NOINVERT
+    "S",            IDM_SHOWSIDEBAR,        VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_SEND_AS_EMAIL,      VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,6,0
+ PRODUCTVERSION 1,1,6,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Freware event log viewer for enteo NetInstall and FrontRange DSM. Visit http://www.stephan-brenner.com for more information."
+            VALUE "FileDescription", "NI Log Viewer"
+            VALUE "FileVersion", "1.1.6.0"
+            VALUE "InternalName", "NiLogVwr"
+            VALUE "LegalCopyright", "Copyright (C) 2005-2011 Stephan Brenner"
+            VALUE "OriginalFilename", "nilogvwr.exe"
+            VALUE "ProductName", "NI Log Viewer"
+            VALUE "ProductVersion", "1.1.6.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "SLogVwr.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_FILE
+//
+
+IDR_BRAINCHILD_DLL      RT_FILE                 "..\\3p\\Brainchild\\Release\\Brainchild.dll"
+IDR_ENTEO_LOG_FILE_BCB  RT_FILE                 "enteo Log File.bcp"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_FILE
+//
+
+IDR_MAPIMAIL_EXE        RT_FILE                 "..\\3p\\MapiMail\\mapimail.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_DOWNLOAD_AVI        AVI                     "DOWNLOAD.AVI"
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FIF DIALOGEX 0, 0, 399, 274
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Find in Files"
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_FIND,138,4,185,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_FOLDER,116,27,48,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Match &case",IDC_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,67,53,51,8
+    DEFPUSHBUTTON   "Start",IDC_GO,315,92,52,13,WS_DISABLED
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,23,116,83,32
+    LTEXT           "Fi&nd what:",IDC_STATIC_1,31,7,34,8,SS_CENTERIMAGE
+    LTEXT           "&Look in:",IDC_STATIC_2,30,39,26,8
+    CONTROL         "",IDC_PROC,"ClsWindowClass",WS_TABSTOP,134,77,185,13
+    LTEXT           "Ocurrence(s):",IDC_STATIC_3,15,92,46,8,SS_CENTERIMAGE
+    LTEXT           "0 on 0 lines",IDC_OCC,65,92,185,13,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FIF, DIALOG
+    BEGIN
+        RIGHTMARGIN, 398
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CHILDMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            IDM_OPEN
+        MENUITEM "&Close\tCtrl+F4",             IDM_CLOSE
+        MENUITEM "Close &All",                  IDM_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Send As eMail...\tCtrl+E",   IDM_SEND_AS_EMAIL, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Page &Setup...",              40103, INACTIVE
+        MENUITEM "&Print...\tCtrl+P",           IDM_PRINT, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Files",                IDM_RECENTFILES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               IDM_COPY, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Select A&ll\tCtrl+F4",        IDM_SELECTALL, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "F&ind in Files...\tCtrl+Shif+F", IDM_FINDINFILES
+        MENUITEM "&Find...\tCtrl+F",            IDM_FIND, INACTIVE
+        MENUITEM "Find Previo&us\tShift+F3",    IDM_FINDPREV, INACTIVE
+        MENUITEM "Find &Next\tF3",              IDM_FINDNEXT, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Go To...\tCtrl+G",           IDM_GOTO, INACTIVE
+        POPUP "Bookmarks"
+        BEGIN
+            MENUITEM "&Toggle\tCtrl+F2",            IDM_TOGGLEBM, INACTIVE
+            MENUITEM "&Clear All\tShift+Ctrl+F2",   IDM_CLEARBM, INACTIVE
+            MENUITEM "Goto &First",                 IDM_FIRSTBM, INACTIVE
+            MENUITEM "Goto &Next\tF2",              IDM_NEXTBM, INACTIVE
+            MENUITEM "Goto &Previous\tShift+F2",    IDM_PREVBM, INACTIVE
+            MENUITEM "Goto &Last",                  IDM_LASTBM, INACTIVE
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "S&how Sidebar\tCtrl+S",       IDM_SHOWSIDEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Reload\tF5",                 IDM_RELOAD_FILE, INACTIVE
+    END
+    POPUP "&Log Folder"
+    BEGIN
+        MENUITEM "&Open Folder...\tCtrl+Shift+O", IDM_CHANGE_LOGFOLDER
+        MENUITEM SEPARATOR
+        POPUP "&Delete Files"
+        BEGIN
+            MENUITEM "&All\tCtrl+Shift+Del",        IDM_DELETE_ALL_FILES
+            MENUITEM "Older Than 1 &Minute",        IDM_DELETE_OLDER_ONE_MINUTE
+            MENUITEM "Older Than 1 &Hour",          IDM_DELETE_OLDER_ONE_HOUR
+            MENUITEM "Older Than 1 &Day",           IDM_DELETE_OLDER_ONE_DAY
+            MENUITEM "Older Than 1 &Week",          IDM_DELETE_OLDER_ONE_WEEK
+            MENUITEM "Older Than 1 M&onth",         IDM_DELETE_OLDER_ONE_MONTH
+        END
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Register File Extension "".log""", IDM_REGISTERFILEEXTENSION
+        MENUITEM "&Scroll To End On File Load", IDM_SCROLL_TO_END_ON_FILE_LOAD
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Command Line Parameters...", IDM_COMMANDLINEPARAMETERS
+        MENUITEM "&About...",                   IDM_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FIF DLGINIT
+BEGIN
+    IDC_FOLDER, 0x403, 11, 0
+0x6f4c, 0x2067, 0x6f46, 0x646c, 0x7265, "\000" 
+    IDC_FOLDER, 0x403, 13, 0
+0x7543, 0x7272, 0x6e65, 0x2074, 0x6946, 0x656c, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOG_FOLDER DIALOGEX 0, 0, 332, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Log Folder"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMPUTER_COMBO,80,20,245,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FOLDER_COMBO,44,59,281,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&OK",IDOK,113,92,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,167,92,50,14
+    CONTROL         "Open &computer's log folder:",IDC_COMPUTER_RADIO,"Button",BS_AUTORADIOBUTTON,7,8,105,10
+    LTEXT           "&Computer name:",IDC_STATIC,25,23,54,8
+    CONTROL         "&Open folder by specifying its path (local or UNC)",IDC_PATH_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,7,46,170,10
+    LTEXT           "&Path:",IDC_STATIC,25,62,18,8
+END
+
+IDD_SIDEBAR DIALOGEX 0, 0, 250, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Button1",IDC_LOGFOLDER_LINK,42,17,192,14,BS_LEFT | BS_TOP
+    EDITTEXT        IDC_FILTER_BOX,25,38,65,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&OK",IDC_FILTER_BUTTON,93,38,19,14
+    PUSHBUTTON      "&Open Folder...",IDC_CHANGE_FOLDER_BUTTON,179,38,66,14
+    CONTROL         "",IDC_LOGFILE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,57,236,178
+    LTEXT           "Filter:",IDC_FILTER_TEXT,4,41,20,8
+    LTEXT           "Folder:",IDC_FOLDER_HEADER,10,20,24,8
+    PUSHBUTTON      "<<",IDB_SMALL_SIDEBAR,214,1,16,12,BS_CENTER | BS_VCENTER
+    LTEXT           "Monitor Log Folder",IDC_SIDEBAR_HEADER,6,3,60,8
+    CONTROL         "",IDC_ANIMATE,"SysAnimate32",ACS_TRANSPARENT | WS_TABSTOP,128,33,27,21
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LOG_FOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        VERTGUIDE, 25
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SIDEBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 249
+        BOTTOMMARGIN, 245
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LOG_FOLDER DLGINIT
+BEGIN
+    IDC_COMPUTER_COMBO, 0x403, 10, 0
+0x6f6c, 0x6163, 0x686c, 0x736f, 0x0074, 
+    0
+END
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

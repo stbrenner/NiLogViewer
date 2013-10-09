@@ -1,0 +1,420 @@
+;
+;	General settings.
+;
+Name=enteo Log File
+Extentions=.log;.1;.2;.3;.4;.5;.6;.7;.8;.9
+Delimiters=()|{}[];"<> ?!:.,;\/+=
+AutoMatch=N
+VisibleAutoMatchError=N
+ClearSpaces=N
+DnDEnabled=Y
+SelectionMargin=Y
+SolidMargin=N
+Default=N
+FastScroll=Y
+ClearUndoAfterSave=N
+VisibleSpaces=N
+ShowLineNumbers=N
+CaseFixing=N
+SolidMargin=N
+ColorBracketMatches=N
+HighlightLine=N
+ParseHyperlinks=Y
+ShowHyperTips=Y
+CaretType=1
+ColumnMarker=N
+ColumnMarkerOffset=80
+;
+;	Printer settings.
+;
+PrintSyntaxColoring=Y
+PrintHeader=N
+PrintFooter=N
+PrintScreenFont=Y
+PrintLineNumbers=N
+PrinterFont=Courier New,0,400,0,0,0
+;
+;	Date & Time settings.
+;
+DateFormat=yyyy'-'MM'-'dd
+TimeFormat=HH':'mm':'ss
+;
+;	File settings.
+;
+FileMode=1
+BackupFiles=N
+BackupMode=0
+;
+;	Color settings
+;
+TextRGB=*
+BackgroundRGB=*
+BackgroundReadOnlyRGB=255,255,255
+MarginRGB=*
+BookmarkRGB=*
+NumberRGB=255,0,0
+DelimiterRGB=*
+SelectedTextRGB=*
+SelectedBackgroundRGB=*
+LineNumberRGB=*
+BkgndLineNumberRGB=*
+BkgndNumberRGB=*
+BkgndDelimiterRGB=*
+BracketMatchRGB=*
+LineHighlightRGB=*
+HyperlinkRGB=*
+BkgndHyperlinkRGB=*
+ScreenFont=Courier New,-13,400,0,0,0
+;
+;	General syntaxcoloring settings.
+;
+SyntaxColoring=Y
+Case=N
+;
+;	Blocks.
+;
+Block=String
+	RGB=139,0,0
+	BkRGB=*
+	Start='
+	End='
+EndBlock
+
+Block=logrogue-Comment
+	RGB=0,147,0
+	BkRGB=*
+	Start=-----
+	End=\n
+EndBlock
+
+Block=logrogue-Beta Build
+	RGB=123,123,192
+	BkRGB=*
+	Start=[BETA_BUILD]
+	End=\n
+EndBlock
+
+Block=log4net-DateTime-2006
+	RGB=192,192,192
+	BkRGB=*
+	Start=2006-
+	StartOfLine=Y
+	End=]
+EndBlock
+
+Block=log4net-DateTime-2007
+	RGB=192,192,192
+	BkRGB=*
+	Start=2007-
+	StartOfLine=Y
+	End=]
+EndBlock
+
+Block=log4net-DateTime-2008
+	RGB=192,192,192
+	BkRGB=*
+	Start=2008-
+	StartOfLine=Y
+	End=]
+EndBlock
+
+Block=log4net-DateTime-2009
+	RGB=192,192,192
+	BkRGB=*
+	Start=2009-
+	StartOfLine=Y
+	End=]
+EndBlock
+
+Block=log4net-DEBUG
+	RGB=160,160,160
+	BkRGB=*
+	Start=DEBUG Enteo.
+	End=-
+EndBlock
+
+Block=log4net-INFO
+	RGB=130,130,255
+	BkRGB=*
+	Start=INFO  Enteo.
+	End=-
+EndBlock
+
+Block=log4net-WARN
+	RGB=255,176,138
+	BkRGB=*
+	Start=WARN  Enteo.
+	End=-
+EndBlock
+
+Block=log4net-ERROR
+	RGB=255,128,128
+	BkRGB=*
+	Start=ERROR Enteo.
+	End=-
+EndBlock
+
+Block=log4net-FATAL
+	RGB=255,94,94
+	BkRGB=*
+	Start=FATAL Enteo.
+	End=-
+EndBlock
+
+;
+;	Keywords.
+;
+Keywords
+RGB=255,255,255
+BkRGB=139,0,0
+Error
+RGB=255,255,255
+BkRGB=255,104,32
+Warning
+EndKeywords
+;
+;	Smart indention strings.
+;
+AutoIndent=Y
+SmartIndent=N
+Tab=8
+;
+;	Keyboard settings
+;
+Key=Ctrl a
+	Hardcoded=201
+EndKey
+Key=Alt c
+	Hardcoded=232
+EndKey
+Key=Ctrl c
+	Hardcoded=226
+EndKey
+Key=Shift Ctrl c
+	Hardcoded=229
+EndKey
+Key=Ctrl d
+	Hardcoded=121
+EndKey
+Key=Shift Ctrl d
+	Hardcoded=122
+EndKey
+Key=Ctrl f
+	Hardcoded=301
+EndKey
+Key=Ctrl g
+	Hardcoded=300
+EndKey
+Key=Back
+	Hardcoded=104
+EndKey
+Key=Ctrl Back
+	Hardcoded=114
+EndKey
+Key=Ctrl h
+	Hardcoded=302
+EndKey
+Key=Shift Ctrl Tab
+	Hardcoded=22
+EndKey
+Key=Tab
+	Hardcoded=115
+EndKey
+Key=Shift Tab
+	Hardcoded=116
+EndKey
+Key=Alt l
+	Hardcoded=109
+EndKey
+Key=Shift Ctrl l
+	Hardcoded=203
+EndKey
+Key=Return
+	Hardcoded=107
+EndKey
+Key=Alt Return
+	Hardcoded=303
+EndKey
+Key=Ctrl p
+	Hardcoded=403
+EndKey
+Key=Alt s
+	Hardcoded=110
+EndKey
+Key=Ctrl s
+	Hardcoded=401
+EndKey
+Key=Shift Alt t
+	Hardcoded=117
+EndKey
+Key=Alt u
+	Hardcoded=108
+EndKey
+Key=Ctrl u
+	Hardcoded=119
+EndKey
+Key=Shift Ctrl u
+	Hardcoded=118
+EndKey
+Key=Ctrl Alt u
+	Hardcoded=120
+EndKey
+Key=Ctrl v
+	Hardcoded=225
+EndKey
+Key=Shift Ctrl w
+	Hardcoded=200
+EndKey
+Key=Ctrl x
+	Hardcoded=227
+EndKey
+Key=Alt x
+	Hardcoded=233
+EndKey
+Key=Shift Ctrl x
+	Hardcoded=230
+EndKey
+Key=Ctrl y
+	Hardcoded=101
+EndKey
+Key=Ctrl z
+	Hardcoded=100
+EndKey
+Key=PageUp
+	Hardcoded=23
+EndKey
+Key=Shift PageUp
+	Hardcoded=24
+EndKey
+Key=Ctrl PageUp
+	Hardcoded=83
+EndKey
+Key=PageDown
+	Hardcoded=25
+EndKey
+Key=Shift PageDown
+	Hardcoded=26
+EndKey
+Key=Ctrl PageDown
+	Hardcoded=82
+EndKey
+Key=End
+	Hardcoded=9
+EndKey
+Key=Shift End
+	Hardcoded=10
+EndKey
+Key=Ctrl End
+	Hardcoded=19
+EndKey
+Key=Shift Ctrl End
+	Hardcoded=20
+EndKey
+Key=Home
+	Hardcoded=11
+EndKey
+Key=Shift Home
+	Hardcoded=12
+EndKey
+Key=Ctrl Home
+	Hardcoded=17
+EndKey
+Key=Shift Ctrl Home
+	Hardcoded=18
+EndKey
+Key=Left
+	Hardcoded=3
+EndKey
+Key=Shift Left
+	Hardcoded=4
+EndKey
+Key=Ctrl Left
+	Hardcoded=15
+EndKey
+Key=Shift Ctrl Left
+	Hardcoded=16
+EndKey
+Key=Up
+	Hardcoded=5
+EndKey
+Key=Shift Up
+	Hardcoded=6
+EndKey
+Key=Ctrl Up
+	Hardcoded=81
+EndKey
+Key=Right
+	Hardcoded=1
+EndKey
+Key=Shift Right
+	Hardcoded=2
+EndKey
+Key=Ctrl Right
+	Hardcoded=13
+EndKey
+Key=Shift Ctrl Right
+	Hardcoded=14
+EndKey
+Key=Down
+	Hardcoded=7
+EndKey
+Key=Shift Down
+	Hardcoded=8
+EndKey
+Key=Ctrl Down
+	Hardcoded=80
+EndKey
+Key=Insert
+	Hardcoded=123
+EndKey
+Key=Shift Insert
+	Hardcoded=225
+EndKey
+Key=Delete
+	Hardcoded=105
+EndKey
+Key=Alt Delete
+	Hardcoded=106
+EndKey
+Key=Shift Delete
+	Hardcoded=103
+EndKey
+Key=Ctrl Delete
+	Hardcoded=113
+EndKey
+Key=Shift Ctrl Delete
+	Hardcoded=112
+EndKey
+Key=Ctrl F1
+	Hardcoded=304
+EndKey
+Key=Ctrl F2
+	Hardcoded=252
+EndKey
+Key=Shift Ctrl F2
+	Hardcoded=253
+EndKey
+Key=F2
+	Hardcoded=254
+EndKey
+Key=Shift F2
+	Hardcoded=255
+EndKey
+Key=F3
+	Hardcoded=277
+EndKey
+Key=Shift F3
+	Hardcoded=278
+EndKey
+Key=Ctrl F3
+	Hardcoded=275
+EndKey
+Key=Shift Ctrl F3
+	Hardcoded=276
+EndKey
+Key=Ctrl Alt 9
+	Hardcoded=279
+EndKey
+Key=Shift Ctrl Alt 9
+	Hardcoded=280
+EndKey

@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NiLogVwr", "LogViewer.vcxproj", "{EDFBE05F-4B6E-4AE8-82FC-23130FDDA2D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Brainchild", "..\3p\Brainchild\Brainchild.vcxproj", "{3E613F27-4E62-49CF-8B9B-C70D85B3F2FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassLib", "..\3p\ClassLib\ClassLib.vcxproj", "{9749A918-FDFC-4D7E-A0D4-80F7A40465E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFBE05F-4B6E-4AE8-82FC-23130FDDA2D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDFBE05F-4B6E-4AE8-82FC-23130FDDA2D9}.Debug|Win32.Build.0 = Debug|Win32
+		{EDFBE05F-4B6E-4AE8-82FC-23130FDDA2D9}.Release|Win32.ActiveCfg = Release|Win32
+		{EDFBE05F-4B6E-4AE8-82FC-23130FDDA2D9}.Release|Win32.Build.0 = Release|Win32
+		{3E613F27-4E62-49CF-8B9B-C70D85B3F2FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E613F27-4E62-49CF-8B9B-C70D85B3F2FC}.Debug|Win32.Build.0 = Debug|Win32
+		{3E613F27-4E62-49CF-8B9B-C70D85B3F2FC}.Release|Win32.ActiveCfg = Release|Win32
+		{3E613F27-4E62-49CF-8B9B-C70D85B3F2FC}.Release|Win32.Build.0 = Release|Win32
+		{9749A918-FDFC-4D7E-A0D4-80F7A40465E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9749A918-FDFC-4D7E-A0D4-80F7A40465E4}.Debug|Win32.Build.0 = Debug|Win32
+		{9749A918-FDFC-4D7E-A0D4-80F7A40465E4}.Release|Win32.ActiveCfg = Release|Win32
+		{9749A918-FDFC-4D7E-A0D4-80F7A40465E4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

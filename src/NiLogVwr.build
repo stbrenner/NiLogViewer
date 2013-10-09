@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name="NiLogVwr" default="output">
+  <property name="output.dir" value="output"/>
+  <property name="build.version" value="${fileversioninfo::get-file-version(
+    fileversioninfo::get-version-info('release\NiLogVwr.exe'))}"/>
+ 
+  <target name="clean">
+    <delete dir="${output.dir}" if="${directory::exists(output.dir)}" />
+  </target>
+
+  <target name="build" depends="clean">
+  </target>
+
+  <target name="output" depends="build">
+    <mkdir dir="${output.dir}" />  
+    <zip zipfile="${output.dir}\NiLogVwr-${build.version}.zip">
+        <fileset basedir="release">
+            <include name="NiLogVwr.exe" />
+        </fileset>
+        <fileset>
+            <include name="NiLogVwr-VersionHistory.txt" />
+        </fileset>
+    </zip>    
+  </target>
+</project>

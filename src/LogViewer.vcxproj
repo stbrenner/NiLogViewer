@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>NiLogVwr</ProjectName>
+    <ProjectGuid>{EDFBE05F-4B6E-4AE8-82FC-23130FDDA2D9}</ProjectGuid>
+    <RootNamespace>NiLogVwr</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/BCDemo.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/NiLogVwr.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>classlib.lib;comctl32.lib;shlwapi.lib;Mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/NiLogVwr.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\3p\ClassLib\LIB;..\3p\Brainchild\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\Release/NiLogVwr.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/BCDemo.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/NiLogVwr.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0000</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>classlibd.lib;comctl32.lib;shlwapi.lib;Mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/NiLogVwr.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\3p\ClassLib\LIB;..\3p\Brainchild\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/NiLogVwr.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bcchild.cpp" />
+    <ClCompile Include="bcframe.cpp" />
+    <ClCompile Include="bcmenu.cpp" />
+    <ClCompile Include="bcstatus.cpp" />
+    <ClCompile Include="bctoolbar.cpp" />
+    <ClCompile Include="EmailSender.cpp" />
+    <ClCompile Include="HelperFunctions.cpp" />
+    <ClCompile Include="HyperlinkHandler.cpp" />
+    <ClCompile Include="LogFileDialog.cpp" />
+    <ClCompile Include="LogFileListCtrl.cpp" />
+    <ClCompile Include="LogFolderConn.cpp" />
+    <ClCompile Include="LogFolderDlg.cpp" />
+    <ClCompile Include="LogFolderEraser.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RemoteConnection.cpp" />
+    <ClCompile Include="SidebarDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TempWriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bcchild.h" />
+    <ClInclude Include="bcframe.h" />
+    <ClInclude Include="bcmenu.h" />
+    <ClInclude Include="bcstatus.h" />
+    <ClInclude Include="bctoolbar.h" />
+    <ClInclude Include="BuildInfo.h" />
+    <ClInclude Include="cmdlineargs.h" />
+    <ClInclude Include="EmailSender.h" />
+    <ClInclude Include="FastFindDlg.h" />
+    <ClInclude Include="HelperFunctions.h" />
+    <ClInclude Include="HyperlinkHandler.h" />
+    <ClInclude Include="LogFileDialog.h" />
+    <ClInclude Include="LogFileListCtrl.h" />
+    <ClInclude Include="LogFolderConn.h" />
+    <ClInclude Include="LogFolderDlg.h" />
+    <ClInclude Include="LogFolderEraser.h" />
+    <ClInclude Include="MessageCodes.h" />
+    <ClInclude Include="RemoteConnection.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SidebarDlg.h" />
+    <CustomBuild Include="stdafx.h" />
+    <ClInclude Include="TempWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCDemo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libs\Brainchild\Release\Brainchild.dll" />
+    <None Include="Download.avi" />
+    <None Include="enteo Log File.bcp" />
+    <None Include="..\libs\MapiMail\mapimail.exe" />
+    <None Include="..\3p\brainchild\release\Brainchild.dll" />
+    <None Include="..\3p\MapiMail\mapimail.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logfile.ico" />
+    <Image Include="LogViewer.ico" />
+    <Image Include="toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="SLogVwr.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="NiLogVwr-VersionHistory.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3p\Brainchild\Brainchild.vcxproj">
+      <Project>{3e613f27-4e62-49cf-8b9b-c70d85b3f2fc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\3p\ClassLib\ClassLib.vcxproj">
+      <Project>{9749a918-fdfc-4d7e-a0d4-80f7a40465e4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BCDemo.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,107 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADO DIALOGEX 0, 0, 266, 206
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ADO Sample..."
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,146,100,50,14
+    COMBOBOX        IDC_TABLES,69,23,128,92,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CONN,79,7,117,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CONTENT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,39,190,55
+    RTEXT           "Connection string:",IDC_LABEL1,7,8,60,8,0,
+                    WS_EX_TRANSPARENT
+    RTEXT           "Table:",IDC_LABEL2,7,24,60,8,0,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_LABEL3,208,23,51,8,0,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

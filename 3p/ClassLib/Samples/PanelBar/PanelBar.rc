@@ -1,0 +1,122 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANELDLG DIALOGEX 0, 0, 312, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CLIPCHILDREN | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "PanelBar and OutlookBar demonstration program..."
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_TABSTOP,278,166,30,
+                    45
+    CONTROL         "Small images",IDC_SMALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,42,119,8
+    CONTROL         "Office XP look",IDC_XP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,53,119,8
+    CONTROL         "Disable ""Inbox"" button.",IDC_DISABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,133,64,119,8
+    LTEXT           "Enter a title here and then click on the outlook button of which you want to set the entered text as the button it's label:",
+                    IDC_STATIC,134,86,170,24
+    EDITTEXT        IDC_EDIT,134,113,174,13,ES_AUTOHSCROLL
+    CTEXT           "This program demonstrates the ClsPanelBar, ClsPanel and Cls(XP)OutlookBar control. Use the controls below to manipulate the outlook bar and panels.",
+                    IDC_STATIC,133,4,175,35
+    PUSHBUTTON      "Insert Panel...",IDC_INSERT,134,139,174,13
+    PUSHBUTTON      "Add Panel...",IDC_ADD,134,155,174,13
+    CONTROL         "Custom1",IDC_BAR,"ClsWindowClass",WS_TABSTOP,4,4,126,
+                    207
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PANELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 308
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+IDB_BITMAP2             BITMAP                  "bitmap2.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f9eb437a-83c7-4afa-9f0a-8e0f657bdc1b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{41553408-0c12-4608-9e3f-674824c5a6d9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{815cfce9-96c5-4292-b0ed-42a1c2866120}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bcchild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bcframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bcmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bcstatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bctoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EmailSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelperFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperlinkHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFileListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFolderConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFolderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFolderEraser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SidebarDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TempWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bcchild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bcframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bcmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bcstatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bctoolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdlineargs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmailSender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FastFindDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperlinkHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFileListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFolderConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFolderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFolderEraser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SidebarDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TempWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCDemo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libs\Brainchild\Release\Brainchild.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Download.avi">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="enteo Log File.bcp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\libs\MapiMail\mapimail.exe">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\3p\MapiMail\mapimail.exe" />
+    <None Include="..\3p\brainchild\release\Brainchild.dll">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logfile.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LogViewer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="SLogVwr.exe.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="NiLogVwr-VersionHistory.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

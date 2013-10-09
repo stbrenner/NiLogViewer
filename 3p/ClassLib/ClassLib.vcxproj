@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9749A918-FDFC-4D7E-A0D4-80F7A40465E4}</ProjectGuid>
+    <RootNamespace>ClassLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\ClassLib_Release\</OutDir>
+    <IntDir>.\ClassLib_Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\ClassLib_Debug\</OutDir>
+    <IntDir>.\ClassLib_Debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\ClassLib_Release/ClassLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ClassLib_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\ClassLib_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ClassLib_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0413</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>LIB\ClassLib.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\ClassLib_Debug/ClassLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ClassLib_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\ClassLib_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ClassLib_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0413</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>LIB\ClassLibD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="Menus\bitmapmenu.cpp" />
+    <ClCompile Include="Menus\menu.cpp" />
+    <ClCompile Include="Menus\xpmenu.cpp" />
+    <ClCompile Include="Strings\string.cpp" />
+    <ClCompile Include="Tools\boyermoore.cpp" />
+    <ClCompile Include="Tools\Crc16.cpp" />
+    <ClCompile Include="Tools\Crc32.cpp" />
+    <ClCompile Include="Tools\drawtools.cpp" />
+    <ClCompile Include="Tools\findfile.cpp" />
+    <ClCompile Include="Tools\module.cpp" />
+    <ClCompile Include="Tools\mru.cpp" />
+    <ClCompile Include="Tools\recttracker.cpp" />
+    <ClCompile Include="Tools\regkey.cpp" />
+    <ClCompile Include="Tools\tracker.cpp" />
+    <ClCompile Include="Windows\cfwindow.cpp" />
+    <ClCompile Include="Windows\dialog.cpp" />
+    <ClCompile Include="Windows\mdichildwindow.cpp" />
+    <ClCompile Include="Windows\mdimainwindow.cpp" />
+    <ClCompile Include="Windows\window.cpp" />
+    <ClCompile Include="Windows\Common Dialogs\colordialog.cpp" />
+    <ClCompile Include="Windows\Common Dialogs\filedialog.cpp" />
+    <ClCompile Include="Windows\Common Dialogs\fontdialog.cpp" />
+    <ClCompile Include="Windows\Custom Controls\balloonhelp.cpp" />
+    <ClCompile Include="Windows\Custom Controls\browser.cpp" />
+    <ClCompile Include="Windows\Custom Controls\colorpicker.cpp" />
+    <ClCompile Include="Windows\Custom Controls\colorpopup.cpp" />
+    <ClCompile Include="Windows\Custom Controls\filedirbrowser.cpp" />
+    <ClCompile Include="Windows\Custom Controls\filedirtree.cpp" />
+    <ClCompile Include="Windows\Custom Controls\flatbutton.cpp" />
+    <ClCompile Include="Windows\Custom Controls\hotbutton.cpp" />
+    <ClCompile Include="Windows\Custom Controls\hotcombobox.cpp" />
+    <ClCompile Include="Windows\Custom Controls\hotedit.cpp" />
+    <ClCompile Include="Windows\Custom Controls\hyperlink.cpp" />
+    <ClCompile Include="Windows\Custom Controls\infobar.cpp" />
+    <ClCompile Include="Windows\Custom Controls\infocontrol.cpp" />
+    <ClCompile Include="Windows\Custom Controls\outlookbar.cpp" />
+    <ClCompile Include="Windows\Custom Controls\panel.cpp" />
+    <ClCompile Include="Windows\Custom Controls\panelbar.cpp" />
+    <ClCompile Include="Windows\Custom Controls\splitter.cpp" />
+    <ClCompile Include="Gdi\bitmap.cpp" />
+    <ClCompile Include="Gdi\brush.cpp" />
+    <ClCompile Include="Gdi\dc.cpp" />
+    <ClCompile Include="Gdi\font.cpp" />
+    <ClCompile Include="Gdi\gdiobject.cpp" />
+    <ClCompile Include="Gdi\palette.cpp" />
+    <ClCompile Include="Gdi\pen.cpp" />
+    <ClCompile Include="Gdi\rgn.cpp" />
+    <ClCompile Include="Layout\layout.cpp" />
+    <ClCompile Include="Layout\ltab.cpp" />
+    <ClCompile Include="Io\file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.h" />
+    <ClInclude Include="application.h" />
+    <ClInclude Include="standard.h" />
+    <ClInclude Include="Collectors\all.h" />
+    <ClInclude Include="Collectors\Array.h" />
+    <ClInclude Include="Collectors\Collector.h" />
+    <ClInclude Include="Collectors\hash.h" />
+    <ClInclude Include="Collectors\LinkedList.h" />
+    <ClInclude Include="Collectors\simplearray.h" />
+    <ClInclude Include="Collectors\stringarray.h" />
+    <ClInclude Include="Coords\all.h" />
+    <ClInclude Include="Coords\Point.h" />
+    <ClInclude Include="Coords\Rect.h" />
+    <ClInclude Include="Coords\Size.h" />
+    <ClInclude Include="Menus\all.h" />
+    <ClInclude Include="Menus\bitmapmenu.h" />
+    <ClInclude Include="Menus\menu.h" />
+    <ClInclude Include="Menus\menuiteminfo.h" />
+    <ClInclude Include="Menus\xpmenu.h" />
+    <ClInclude Include="Strings\all.h" />
+    <ClInclude Include="Strings\string.h" />
+    <ClInclude Include="Tools\all.h" />
+    <ClInclude Include="Tools\boyermoore.h" />
+    <ClInclude Include="Tools\color.h" />
+    <ClInclude Include="Tools\Crc16.h" />
+    <ClInclude Include="Tools\Crc32.h" />
+    <ClInclude Include="Tools\DrawState.h" />
+    <ClInclude Include="Tools\drawtools.h" />
+    <ClInclude Include="Tools\findfile.h" />
+    <ClInclude Include="Tools\module.h" />
+    <ClInclude Include="Tools\mru.h" />
+    <ClInclude Include="Tools\multimonitor.h" />
+    <ClInclude Include="Tools\recttracker.h" />
+    <ClInclude Include="Tools\regkey.h" />
+    <ClInclude Include="Tools\RGBHLS.h" />
+    <ClInclude Include="Tools\theming.h" />
+    <ClInclude Include="Tools\tracker.h" />
+    <ClInclude Include="Tools\waitcursor.h" />
+    <ClInclude Include="Tools\XPColors.h" />
+    <ClInclude Include="Windows\all.h" />
+    <ClInclude Include="Windows\cfwindow.h" />
+    <ClInclude Include="Windows\dialog.h" />
+    <ClInclude Include="Windows\mdiwindow.h" />
+    <ClInclude Include="Windows\messagebox.h" />
+    <ClInclude Include="Windows\window.h" />
+    <ClInclude Include="Windows\Common Controls\all.h" />
+    <ClInclude Include="Windows\Common Controls\animation.h" />
+    <ClInclude Include="Windows\Common Controls\comboboxex.h" />
+    <ClInclude Include="Windows\Common Controls\commoncontrol.h" />
+    <ClInclude Include="Windows\Common Controls\datetime.h" />
+    <ClInclude Include="Windows\Common Controls\header.h" />
+    <ClInclude Include="Windows\Common Controls\imagelist.h" />
+    <ClInclude Include="Windows\Common Controls\ipaddress.h" />
+    <ClInclude Include="Windows\Common Controls\listview.h" />
+    <ClInclude Include="Windows\Common Controls\monthcalendar.h" />
+    <ClInclude Include="Windows\Common Controls\pager.h" />
+    <ClInclude Include="Windows\Common Controls\progress.h" />
+    <ClInclude Include="Windows\Common Controls\rebar.h" />
+    <ClInclude Include="Windows\Common Controls\statusbar.h" />
+    <ClInclude Include="Windows\Common Controls\tab.h" />
+    <ClInclude Include="Windows\Common Controls\toolbar.h" />
+    <ClInclude Include="Windows\Common Controls\tooltip.h" />
+    <ClInclude Include="Windows\Common Controls\trackbar.h" />
+    <ClInclude Include="Windows\Common Controls\treeview.h" />
+    <ClInclude Include="Windows\Common Controls\updown.h" />
+    <ClInclude Include="Windows\Common Dialogs\all.h" />
+    <ClInclude Include="Windows\Common Dialogs\colordialog.h" />
+    <ClInclude Include="Windows\Common Dialogs\commondialog.h" />
+    <ClInclude Include="Windows\Common Dialogs\filedialog.h" />
+    <ClInclude Include="Windows\Common Dialogs\fontdialog.h" />
+    <ClInclude Include="Windows\Controls\all.h" />
+    <ClInclude Include="Windows\Controls\button.h" />
+    <ClInclude Include="Windows\Controls\checkbox.h" />
+    <ClInclude Include="Windows\Controls\combobox.h" />
+    <ClInclude Include="Windows\Controls\edit.h" />
+    <ClInclude Include="Windows\Controls\listbox.h" />
+    <ClInclude Include="Windows\Controls\radiobutton.h" />
+    <ClInclude Include="Windows\Controls\richedit.h" />
+    <ClInclude Include="Windows\Controls\scroller.h" />
+    <ClInclude Include="Windows\Controls\static.h" />
+    <ClInclude Include="Windows\Custom Controls\all.h" />
+    <ClInclude Include="Windows\Custom Controls\balloonhelp.h" />
+    <ClInclude Include="Windows\Custom Controls\brainchild++.h" />
+    <ClInclude Include="Windows\Custom Controls\brainchild.h" />
+    <ClInclude Include="Windows\Custom Controls\browser.h" />
+    <ClInclude Include="Windows\Custom Controls\colorpicker.h" />
+    <ClInclude Include="Windows\Custom Controls\colorpopup.h" />
+    <ClInclude Include="Windows\Custom Controls\combocompletion.h" />
+    <ClInclude Include="Windows\Custom Controls\dirbrowser.h" />
+    <ClInclude Include="Windows\Custom Controls\filebrowser.h" />
+    <ClInclude Include="Windows\Custom Controls\filedirbrowser.h" />
+    <ClInclude Include="Windows\Custom Controls\filedirtree.h" />
+    <ClInclude Include="Windows\Custom Controls\flatbutton.h" />
+    <ClInclude Include="Windows\Custom Controls\hotbutton.h" />
+    <ClInclude Include="Windows\Custom Controls\hotcombobox.h" />
+    <ClInclude Include="Windows\Custom Controls\hotedit.h" />
+    <ClInclude Include="Windows\Custom Controls\hyperlink.h" />
+    <ClInclude Include="Windows\Custom Controls\infobar.h" />
+    <ClInclude Include="Windows\Custom Controls\infocontrol.h" />
+    <ClInclude Include="Windows\Custom Controls\outlookbar.h" />
+    <ClInclude Include="Windows\Custom Controls\panelbar.h" />
+    <ClInclude Include="Windows\Custom Controls\splitter.h" />
+    <ClInclude Include="Windows\Custom Controls\CustomTabCtrl\all.h" />
+    <ClInclude Include="Windows\Custom Controls\CustomTabCtrl\CustomTabCtrl.h" />
+    <ClInclude Include="Windows\Custom Controls\CustomTabCtrl\DotNetTabCtrl.h" />
+    <ClInclude Include="Windows\Custom Controls\CustomTabCtrl\FolderTabCtrl.h" />
+    <ClInclude Include="GDI\all.h" />
+    <ClInclude Include="Gdi\bitmap.h" />
+    <ClInclude Include="Gdi\brush.h" />
+    <ClInclude Include="Gdi\bufferdc.h" />
+    <ClInclude Include="Gdi\dc.h" />
+    <ClInclude Include="Gdi\font.h" />
+    <ClInclude Include="Gdi\gdiobject.h" />
+    <ClInclude Include="Gdi\getdc.h" />
+    <ClInclude Include="Gdi\paintdc.h" />
+    <ClInclude Include="Gdi\palette.h" />
+    <ClInclude Include="Gdi\pen.h" />
+    <ClInclude Include="Gdi\rgn.h" />
+    <ClInclude Include="Gdi\savedc.h" />
+    <ClInclude Include="Gdi\selector.h" />
+    <ClInclude Include="Gdi\windowdc.h" />
+    <ClInclude Include="Exceptions\all.h" />
+    <ClInclude Include="Exceptions\exception.h" />
+    <ClInclude Include="Exceptions\fileexception.h" />
+    <ClInclude Include="Exceptions\memoryexception.h" />
+    <ClInclude Include="Exceptions\shellexception.h" />
+    <ClInclude Include="Layout\all.h" />
+    <ClInclude Include="Layout\layout.h" />
+    <ClInclude Include="Layout\lcheckbox.h" />
+    <ClInclude Include="Layout\lcombobox.h" />
+    <ClInclude Include="Layout\ledit.h" />
+    <ClInclude Include="Layout\llistbox.h" />
+    <ClInclude Include="Layout\lpushbutton.h" />
+    <ClInclude Include="Layout\lradiobutton.h" />
+    <ClInclude Include="Layout\lstatic.h" />
+    <ClInclude Include="Layout\ltab.h" />
+    <ClInclude Include="Layout\sizedialog.h" />
+    <ClInclude Include="IO\all.h" />
+    <ClInclude Include="Io\file.h" />
+    <ClInclude Include="IO\stdiofile.h" />
+    <ClInclude Include="Threads\all.h" />
+    <ClInclude Include="Threads\criticalsection.h" />
+    <ClInclude Include="Threads\event.h" />
+    <ClInclude Include="Threads\mutex.h" />
+    <ClInclude Include="Threads\semaphore.h" />
+    <ClInclude Include="Threads\syncobject.h" />
+    <ClInclude Include="Threads\workerthread.h" />
+    <ClInclude Include="Shell\All.h" />
+    <ClInclude Include="Shell\interface.h" />
+    <ClInclude Include="Shell\shelldesktopfolder.h" />
+    <ClInclude Include="Shell\shellmalloc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ClassHierarchy.txt" />
+    <Text Include="History.txt" />
+    <Text Include="Todo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

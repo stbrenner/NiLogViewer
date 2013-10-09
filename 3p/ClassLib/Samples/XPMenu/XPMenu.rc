@@ -1,0 +1,175 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP                  "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XPMENU DIALOGEX 0, 0, 186, 34
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "XPMenu sample"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,4,50,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_XPMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 182
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 19
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New\tCtrl+N",                 ID_NEW, INACTIVE
+        MENUITEM "Open\tCtrl+O",                ID_OPEN
+        MENUITEM "Save\tCtrl+S",                ID_SAVE
+        MENUITEM "Save &As",                    ID_SAVEAS
+        MENUITEM "Save All\tCtrl+Shift+S",      ID_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Print\tCtrl+P",               ID_PRINT, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Undo\tCtrl+Z",                ID_UNDO
+        MENUITEM "Redo\tCtrl+Y",                ID_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut\tCtrl+X",                 ID_CUT
+        MENUITEM "Copy\tCtrl+C",                ID_COPY
+        MENUITEM "Paste\tCtrl+V",               ID_PASTE
+        MENUITEM "Delete\tDel",                 ID_DELETE
+        MENUITEM SEPARATOR
+        POPUP "Menu Style"
+        BEGIN
+            MENUITEM "Render Old-Style",            ID_SUBITEMS_SUBITEM1
+            MENUITEM "Render XP-Style",             ID_SUBITEMS_SUBITEM2
+            MENUITEM SEPARATOR
+            MENUITEM "Dropshadow.",                 ID_SUBITEMS_CHECKABLE
+            , CHECKED
+            MENUITEM "Checkable with Image",        ID_IMAGE, CHECKED
+        END
+    END
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
