@@ -8,13 +8,14 @@ Binary
 
 **[NiLogVwr_1.1.6.zip](http://www.stephan-brenner.com/downloads/NiLogVwr/NiLogVwr_1.1.6.zip)** (6 KB)
 
-Operating system:	Windows XP or newer
+Operating system:	Windows XP or newer  
+[Version history](src/VersionHistory.txt)
 
 
 Screenshot
 ----------
 
-![Screenshot](http://www.stephan-brenner.com/downloads/NiLogVwr/nilogvwr-small.gif)
+[![Screenshot](http://www.stephan-brenner.com/downloads/NiLogVwr/nilogvwr-small.gif)](http://www.stephan-brenner.com/downloads/NiLogVwr/nilogvwr-big.gif)
 
 Features
 --------
