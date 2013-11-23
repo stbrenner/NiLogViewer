@@ -1,5 +1,5 @@
-NiLogViewer
-===========
+NI Log Viewer
+=============
 
 Viewer for enteo NetInstall and FrontRange DSM log files.
 
