@@ -19,6 +19,7 @@ static struct
 Hyper[] = 
 { 
 	{ "C:\\Documents and Settings",	25 },   // Modifications by Stephan (2005-05-28)
+	{ "C:\\Program Files (x86)",	22 }, //Modification by Felix Schulze (2016-08-09)
 	{ "C:\\Program Files",	16 },
 	{ "C:\\Dokumente und Einstellungen",	30 },
 	{ "c:\\",	3 },
@@ -98,7 +99,10 @@ static BOOL CheckForHyperlink( LPCLASSDATA lpcd, LPPOINT lpPos, LPPOINT lpStart,
 
     // Modified by Stephan
     // To support c:\Program Files,...
-    if (nIndex > 9 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Files"), 5))
+	// Modified by Felix Schulze to support C:\Program Files (x86)
+	if (nIndex > 9 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText + nIndex + 1, _T("Files (x86)"), 5))
+		nIndex -= 16;
+    else if (nIndex > 9 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Files"), 5))
       nIndex -= 10;
     else if (nIndex > 9 && lpLine->nLength > nIndex + 8 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Settings"), 8))
       nIndex -= 16;
@@ -361,6 +365,11 @@ BOOL RunHyperlink( LPCLASSDATA lpcd )
         GetWindowsDirectory(szAliasFolder, MAX_PATH);
         pszLinkNoAlias += 8;
       }
+	  else if (!_tcsnicmp(pszLink, _T("C:\\Program Files (x86)"), 17))
+	  {
+		  _tcscpy(szAliasFolder, _T("c:\\Program Files (x86)"));
+		  pszLinkNoAlias += 22;
+	  }
       else if (!_tcsnicmp(pszLink, _T("%ProgramFilesDir%"), 17))
       {
         if (GetSystemDefaultLangID() & 0x07)   // German

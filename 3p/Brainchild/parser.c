@@ -389,6 +389,7 @@ static struct
 Hyper[] = 
 { 
 	{ "C:\\Documents and Settings",	25 },   // Modifications by Stephan (2005-05-28)
+	{ "C:\\Program Files (x86)",	22 },
 	{ "C:\\Program Files",	16 },
 	{ "C:\\Dokumente und Einstellungen",	30 },
 	{ "c:\\",	3 },
