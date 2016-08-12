@@ -1,6 +1,10 @@
 NI Log Viewer Version History
 -----------------------------
 
+Master
+- Fixed: Support for "Program Files (x86)"
+- Implemented: High-Resolution Icon
+
 Version 1.1.6.0 (08/15/2011)
 - Fixed: Connecting from 32 bit machines to 64 bit machines
 
