@@ -1,0 +1,6 @@
+09:35:54.621 : ----- Program Files (x86) without quotes -----
+09:35:54.621 :  LogFile C:\Program Files (x86)\Common Files\enteo\NiLogs\NiAgnt32_stephan.brenner_5.log, started 14.07.2016 09:35
+09:35:54.621 :  Application : C:\Program Files (x86)\netinst\NiAgnt32.exe(PID: 7404 [1ce8])
+09:35:55.621 : ----- Program Files without quotes -----
+09:35:55.621 :  LogFile C:\Program Files\Common Files\enteo\NiLogs\NiAgnt32_stephan.brenner_5.log, started 14.07.2016 09:35
+09:35:55.621 :  Application : C:\Program Files\netinst\NiAgnt32.exe(PID: 7404 [1ce8])

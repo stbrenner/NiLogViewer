@@ -659,8 +659,8 @@ LRESULT BCFrameWnd::OnCommand( UINT nNotifyCode, UINT nCtrlID, HWND hWndCtrl )
       mb.Body()    = ISEQ_LEFT ISEQ_BOLD
         _T( "NI Log Viewer " ) _T(VER_PRODUCT) _T("\n" )
         ISEQ_NORMAL
-        _T( "Freeware Event Log Viewer for enteo NetInstall and FrontRange DSM\n\n" )
-        _T( "Copyright (C) 2005-2011 Stephan Brenner\n\n" )
+        _T( "Freeware Event Log Viewer for enteo NetInstall and HEAT DSM\n\n" )
+        _T( "Copyright (C) 2005-2016 Stephan Brenner\n\n" )
         _T( "For more information and updates visit " )
         ISEQ_TEXTRGB( _T( "0,0,255" ))
         _T( "http://www.stephan-brenner.com" )

@@ -18,8 +18,8 @@ static struct
 } 
 Hyper[] = 
 { 
-	{ "C:\\Documents and Settings",	25 },   // Modifications by Stephan (2005-05-28)
-	{ "C:\\Program Files (x86)",	22 }, //Modification by Felix Schulze (2016-08-09)
+	{ "C:\\Documents and Settings",	25 }, 
+	{ "C:\\Program Files (x86)",	22 },
 	{ "C:\\Program Files",	16 },
 	{ "C:\\Dokumente und Einstellungen",	30 },
 	{ "c:\\",	3 },
@@ -94,19 +94,17 @@ static BOOL CheckForHyperlink( LPCLASSDATA lpcd, LPPOINT lpPos, LPPOINT lpStart,
 		 *	beginning of the line.
 		 */
 		while ( nIndex > 0 && ! _istspace( lpLine->pcText[ nIndex ] ) && lpLine->pcText[ nIndex ] != _T('=') &&
-            lpLine->pcText[ nIndex ] != _T(';'))   // Modifications by Stephan (2005-05-28)
+            lpLine->pcText[ nIndex ] != _T(';'))
 			nIndex--;
 
-    // Modified by Stephan
-    // To support c:\Program Files,...
-	// Modified by Felix Schulze to support C:\Program Files (x86)
-	if (nIndex > 9 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText + nIndex + 1, _T("Files (x86)"), 5))
+    // Support for certain Windows folders with white spaces
+	if (nIndex >= 16 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText + nIndex + 1, _T("(x86)"), 5))
 		nIndex -= 16;
-    else if (nIndex > 9 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Files"), 5))
+    else if (nIndex >= 10 && lpLine->nLength > nIndex + 5 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Files"), 5))
       nIndex -= 10;
-    else if (nIndex > 9 && lpLine->nLength > nIndex + 8 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Settings"), 8))
+    else if (nIndex >= 16 && lpLine->nLength > nIndex + 8 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Settings"), 8))
       nIndex -= 16;
-    else if (nIndex > 9 && lpLine->nLength > nIndex + 13 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Einstellungen"), 13))
+    else if (nIndex >= 16 && lpLine->nLength > nIndex + 13 && !_tcsncicmp(lpLine->pcText+nIndex+1, _T("Einstellungen"), 13))
       nIndex -= 16;
 	}
 	else
@@ -365,10 +363,15 @@ BOOL RunHyperlink( LPCLASSDATA lpcd )
         GetWindowsDirectory(szAliasFolder, MAX_PATH);
         pszLinkNoAlias += 8;
       }
-	  else if (!_tcsnicmp(pszLink, _T("C:\\Program Files (x86)"), 17))
+	  else if (!_tcsnicmp(pszLink, _T("C:\\Program Files (x86)\\Common"), 29))
 	  {
-		  _tcscpy(szAliasFolder, _T("c:\\Program Files (x86)"));
-		  pszLinkNoAlias += 22;
+		  _tcscpy(szAliasFolder, _T("c:\\Program Files (x86)\\Common Files"));
+		  pszLinkNoAlias += 29;
+	  }
+	  else if (!_tcsnicmp(pszLink, _T("C:\\Program Files\\Common"), 23))
+	  {
+		  _tcscpy(szAliasFolder, _T("c:\\Program Files\\Common Files"));
+		  pszLinkNoAlias += 23;
 	  }
       else if (!_tcsnicmp(pszLink, _T("%ProgramFilesDir%"), 17))
       {

@@ -3,3 +3,5 @@ ipch
 Release
 *.sdf
 *.suo
+*.aps
+*.db
