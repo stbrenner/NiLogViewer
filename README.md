@@ -6,10 +6,10 @@ Viewer for enteo NetInstall and FrontRange DSM log files.
 Binary
 ------
 
-**[NiLogVwr_1.1.6.zip](http://www.stephan-brenner.com/downloads/NiLogVwr/NiLogVwr_1.1.6.zip)** (6 KB)
+**[NiLogViewer_1.2.zip](../../releases/download/v1.2/NiLogViewer_1.2.zip)** (516 KB)
 
 Operating system:	Windows XP or newer  
-[Version history](src/VersionHistory.txt)
+[Version history](../../releases)
 
 
 Screenshot
@@ -33,4 +33,4 @@ Features
 How To Build
 ------------
 
-Open ```src\LogViewer.sln``` in Visual Studio 2012 or [Visual Studio Express 2012 for Windows Desktop](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-windows-desktop) and build all.
+Open ```src\LogViewer.sln``` in Visual Studio 2015 and build all.
