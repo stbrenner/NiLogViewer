@@ -15,7 +15,7 @@ Operating system:	Windows XP or newer
 Screenshot
 ----------
 
-[![Screenshot](/screenshot-small.png?raw=true)](/screenshot-big.png?raw=true)
+[![Screenshot](/screenshot-small.gif?raw=true)](/screenshot-big.gif?raw=true)
 
 Features
 --------
