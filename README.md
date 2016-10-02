@@ -15,7 +15,7 @@ Operating system:	Windows XP or newer
 Screenshot
 ----------
 
-[![Screenshot](http://www.stephan-brenner.com/downloads/NiLogVwr/nilogvwr-small.gif)](http://www.stephan-brenner.com/downloads/NiLogVwr/nilogvwr-big.gif)
+[![Screenshot](/screenshot-small.png?raw=true)](/screenshot-big.png?raw=true)
 
 Features
 --------
